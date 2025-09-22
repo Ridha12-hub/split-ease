@@ -13,7 +13,7 @@ import java.util.List;
 
 @Service
 public class CsvExportService {
-
+//List<Bill> bills → input parameter: list of Bill objects containing data to be exported.
     public String exportBillsToCsv(List<Bill> bills) throws IOException {
         String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         String filename = "unpaid_bills_" + timestamp + ".csv";
@@ -24,7 +24,7 @@ public class CsvExportService {
             // Write the CSV header
             printWriter.println("ID,Description,Amount,Date,Payer ID,Group ID");
 
-            // Write each bill as a new row in the CSV file
+            // Write each bill as a new row in the CSV file example 
             for (Bill bill : bills) {
                 printWriter.printf("%d,%s,%.2f,%s,%d,%d\n",
                     bill.getId(),
