@@ -1,0 +1,13 @@
+# Compiled class files
+*.class
+
+# SQLite database files
+*.db
+
+# External libraries
+*.jar
+
+# IDE specific files
+.vscode/
+.idea/
+*.iml
