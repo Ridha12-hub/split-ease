@@ -21,10 +21,10 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-@RestController
-@RequestMapping("/api/splitease/bills/export")
+@RestController//handles web api request send back data
+@RequestMapping("/api/splitease/bills/export")//sets base url
 public class CsvExportController {
-
+//dependency injection
     @Autowired
     private BillService billService;
 
